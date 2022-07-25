@@ -7,12 +7,8 @@
     <title>The Bamboo Panda</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <style>
-        #watch {
-            background-color: coral;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -24,7 +20,7 @@
          Headerer starts
     -------------------->
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-light mb-5">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light mb-5">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -38,16 +34,19 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Backpacks</a>
+                            <a class="nav-link" href="#backpack">Backpacks</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Watch</a>
+                            <a class="nav-link" href="#Subs">Subscribe</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">About Us</a>
+                            <a class="nav-link" href="#">Watch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
                         </li>
                     </ul>
                 </div>
@@ -59,7 +58,7 @@
         <section class="my-5">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item border rounded active bg-info">
+                    <div class="carousel-item border rounded active back-color mt-5">
                         <div class="row d-flex align-items-center p-3">
                             <div class="col-lg-7">
                                 <div class="m-5">
@@ -68,7 +67,7 @@
                                         front of funky world.
                                     </p>
                                     <h1>$420</h1>
-                                    <div class="btn btn-warning">Buy Now</div>
+                                    <div class="btn btn-pink">Buy Now</div>
                                 </div>
                             </div>
                             <div class="col-lg-5">
@@ -76,7 +75,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item border border-4 border-info rounded bg-light ">
+                    <div class="carousel-item border rounded back-color mt-5">
                         <div class="row d-flex align-items-center p-3">
                             <div class="col-lg-7">
                                 <div class="m-5">
@@ -85,7 +84,7 @@
                                         front of fake sports.
                                     </p>
                                     <h1>600</h1>
-                                    <div class="btn btn-info">Buy Now</div>
+                                    <div class="btn btn-pink">Buy Now</div>
                                 </div>
                             </div>
                             <div class="col-lg-5">
@@ -93,8 +92,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item border border-4 border-info rounded"
-                        style="background-color:rgb(247, 230, 235)">
+                    <div class="carousel-item border back-color rounded mt-5">
                         <div class="row d-flex align-items-center p-3">
                             <div class="col-lg-7">
                                 <div class="m-5">
@@ -105,7 +103,7 @@
 
                                     </p>
                                     <h1>$1200</h1>
-                                    <div class="btn btn-info">Buy Now</div>
+                                    <div class="btn btn-pink">Buy Now</div>
                                 </div>
                             </div>
                             <div class="col-lg-5">
@@ -141,7 +139,7 @@
             <div class="container text-center">
                 <div class="row g-2">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="row border rounded m-2 d-flex align-items-center" id="watch">
+                        <div class="row border rounded m-2 d-flex align-items-center watch-bg">
                             <div class="col-7 ">
                                 <h1 class="m-0">Watch</h1>
                             </div>
@@ -151,9 +149,9 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="row border rounded m-2 d-flex align-items-center bg-secondary">
+                        <div class="row border rounded m-2 d-flex align-items-center bag-bg">
                             <div class="col-7 ">
-                                <h1 class="m-0 text-light">Begpack</h1>
+                                <h1 class="m-0 text-light">Bagpack</h1>
                             </div>
                             <div class="col-5">
                                 <img src="images/categories/bag.png" class="w-100" alt="">
@@ -161,7 +159,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="row border rounded m-2 d-flex align-items-center bg-warning">
+                        <div class="row border rounded m-2 d-flex align-items-center shoe-bg">
                             <div class="col-7 ">
                                 <h1 class="m-0 text-light">Shoes</h1>
                             </div>
@@ -178,7 +176,7 @@
         </section>
         <!-- catagories end -->
         <!-- Shoew section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h1>Shoes</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -189,7 +187,7 @@
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional.</p>
                             <h3>$120</h3>
-                            <div class="btn btn-warning">Buy Now >></div>
+                            <div class="btn btn-pink">Buy Now >></div>
                         </div>
                     </div>
                 </div>
@@ -201,7 +199,7 @@
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional
                                 content.</p>
                             <h3>$320</h3>
-                            <div class="btn btn-warning">Buy Now >></div>
+                            <div class="btn btn-pink">Buy Now >></div>
                         </div>
                     </div>
                 </div>
@@ -213,7 +211,7 @@
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional.</p>
                             <h3>$350</h3>
-                            <div class="btn btn-warning">Buy Now >></div>
+                            <div class="btn btn-pink">Buy Now >></div>
                         </div>
                     </div>
                 </div>
@@ -222,7 +220,7 @@
         </section>
         <!-- Shoew section end -->
         <!-- Begpack section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="backpack">
             <h1>Bagpacks</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -237,7 +235,7 @@
 
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-secondary">Buy Now >></div>
+                            <div class="btn btn-pink">Buy Now >></div>
                         </div>
                     </div>
                 </div>
@@ -253,7 +251,7 @@
 
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-secondary">Buy Now >></div>
+                            <div class="btn btn-pink">Buy Now >></div>
                         </div>
                     </div>
                 </div>
@@ -270,7 +268,7 @@
 
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-secondary">Buy Now >></div>
+                            <div class="btn btn-pink">Buy Now >></div>
                         </div>
                     </div>
                 </div>
@@ -278,9 +276,29 @@
             </div>
         </section>
         <!-- Begpack section start -->
+        <!-- Subscribe starts -->
+        <section class="container border-0 rounded my-5 d-flex justify-content-center align-items-center back-color"
+            style="height:350px" id="Subs">
+            <div class="w">
+                <h2>LET'S STAY IN TOUCH</h2>
+                <p>Get updates on sales, specials and more</p>
+                <form>
+                    <div class="">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <button type="submit" class="btn btn-pink mt-1">Submit</button>
+                </form>
+            </div>
+
+        </section>
+        <!-- Subscribe Ends -->
 
     </main>
     <!-- main part end -->
+    <footer>
+        <p class="text-center"><span class="text-secondary">©2020. Panda Commerce. All rights reserved. Sofia,
+                Bulgaria.</span></p>
+    </footer>
 
 
 
