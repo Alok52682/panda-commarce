@@ -2,7 +2,7 @@ console.log('link script');
 
 const h2s = document.querySelectorAll('h2');
 for (const h2 of h2s) {
-    h2.style.color = 'coral';
+    h2.style.color = 'red';
 }
 
 const backpack = document.getElementById('backpack');
@@ -62,7 +62,7 @@ document.getElementById('exampleInputEmail1').addEventListener('keyup', function
 
 })
 
-// demo
+// mouse over image change
 
 function enterMouse() {
     this.setAttribute("src", "watch2.png");
@@ -70,3 +70,10 @@ function enterMouse() {
 function outMouse() {
     this.setAttribute("src", "images/categories/watch.png");
 }
+
+function changebgdoubleclick() {
+    const background = document.getElementById('Subs');
+    background.style.backgroundColor = 'coral';
+
+}
+
