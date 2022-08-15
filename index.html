@@ -144,7 +144,8 @@
                                 <h1 class="m-0">Watch</h1>
                             </div>
                             <div class="col-5">
-                                <img src="images/categories/watch.png" class="w-100" alt="">
+                                <img src="images/categories/watch.png" class="w-100" alt=""
+                                    onmouseover="enterMouse.call(this)" onmouseout="outMouse.call(this)">
                             </div>
                         </div>
                     </div>
@@ -187,7 +188,7 @@
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional.</p>
                             <h3>$120</h3>
-                            <div class="btn btn-pink">Buy Now >></div>
+                            <div class="btn btn-pink remove-btn">Buy Now >></div>
                         </div>
                     </div>
                 </div>
@@ -199,7 +200,7 @@
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional
                                 content.</p>
                             <h3>$320</h3>
-                            <div class="btn btn-pink">Buy Now >></div>
+                            <div class="btn btn-pink remove-btn">Buy Now >></div>
                         </div>
                     </div>
                 </div>
@@ -211,7 +212,7 @@
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional.</p>
                             <h3>$350</h3>
-                            <div class="btn btn-pink">Buy Now >></div>
+                            <div class="btn btn-pink remove-btn">Buy Now >></div>
                         </div>
                     </div>
                 </div>
@@ -235,7 +236,7 @@
 
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-pink">Buy Now >></div>
+                            <div class="btn btn-pink remove-btn">Buy Now >></div>
                         </div>
                     </div>
                 </div>
@@ -251,7 +252,7 @@
 
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-pink">Buy Now >></div>
+                            <div class="btn btn-pink remove-btn">Buy Now >></div>
                         </div>
                     </div>
                 </div>
@@ -268,7 +269,7 @@
 
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-pink">Buy Now >></div>
+                            <div id="blackBag" class="btn btn-pink remove-btn">Buy Now >></div>
                         </div>
                     </div>
                 </div>
@@ -286,7 +287,7 @@
                     <div class="">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
-                    <button type="submit" class="btn btn-pink mt-1">Submit</button>
+                    <button type="submit" id="btn-sub" class="btn btn-pink mt-1" disabled>Submit</button>
                 </form>
             </div>
 
